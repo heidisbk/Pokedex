@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/pokemon.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img class="img_accueil" src="/images/pokmon.png" alt="Bulbizarre, Salamèche et Carapuce">
+        <a href="/"><h1><%= title %></h1></a>
+        <p class="lil_title">Welcome to <%= title %></p>
+    </div>
+    <div class="once">
+        <p>No.<%= pokemon.numero %></p>
+        <p class="name"><%= pokemon.nom %></p>
+    </div>
+    <div class="twice">
+        <div class="gauche">
+            <img class="img_pokemon" src="/images/<%= pokemon.numero %>.png">
+        </div>
+        <div class="droite">
+            <p class="description">Taille</p><p class="valeur"><%= pokemon.taille %></p>
+            <p class="description">Poids</p><p class="valeur"><%= pokemon.poids %></p>
+            <p class="description">Type</p><p class="valeur"><%= pokemon.type1 %></p><p class="valeur valeur2"><%= pokemon.type2 %></p>
+        </div>
+    </div>
+</body>
+</html>

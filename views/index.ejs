@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <img class="img_accueil" src="/images/pokmon.png" alt="Bulbizarre, Salamèche et Carapuce">
+        <a href="/"><h1><%= title %></h1></a>
+        <p class="lil_title">Welcome to <%= title %></p>
+    </div>
+    <div class="wrapper">
+        <% for (let i=0; i < pokemons.length; ++i) { %>
+        <div class="cell">
+            <a href="/:pokemon"><img src="/images/<%= pokemons[i].numero %>.png" alt="Image de <%= pokemons[i].nom %>"></a>
+            <p class="num">No.<%= pokemons[i].numero %></p>
+            <p class="name"><%= pokemons[i].nom %></p>
+            <p class="type"><%= types[i].type1%></p>
+            <p class="type"><%= types[i].type2%></p>
+        </div>
+        <% } %>
+    </div>
+    <p></p>
+</body>
+</html>

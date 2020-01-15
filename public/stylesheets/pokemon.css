@@ -1,0 +1,74 @@
+body {
+    background-color: beige;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+.lil_title {
+    text-align: center;
+}
+
+.img_accueil {
+    margin-left: 35%;
+    width: 30%;
+}
+
+.once {
+    margin-top: 80px;
+    text-align: center;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.twice {
+    text-align: center;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.img_pokemon {
+    width: 80%;
+    border: solid;
+    border-radius: 5%;
+    background-color: lightgray;
+    border-color: gray;
+    border-width: 1px;
+}
+
+.gauche {
+    width: 50%;
+    float: left;
+}
+
+.droite {
+    padding-top: 10px;
+}
+
+.description {
+    color: gray;
+}
+
+.valeur {
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.valeur2 {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
